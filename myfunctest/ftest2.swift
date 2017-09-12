@@ -36,7 +36,30 @@ func ftest2(){
     // 3
     print(v1)
     
+    brad7()
+    brad7(x: "111", "222","333")
+    
+    brad8(value: 3)
+    brad8(value: 2)
+    let (x, y, z) = brad9()
+    print("\(x) : \(y) : \(z)")
 }
+
+func brad9() -> (Int, Double, String) {
+    return (1, 2.3, "Brad")
+}
+
+func brad8(value x : Int){
+    print(x)
+}
+
+func brad7(x:String...){
+    for name in x {
+        print("Hello, \(name)")
+    }
+}
+
+
 func indexOf(source:String, findlast:Character) -> Int {
 //    var ary:[Character] = Array()
 //    for c in source.characters {
@@ -111,3 +134,4 @@ func brad2(y:Int){
 func brad3(z:Int){
     print("brad3:\(z)")
 }
+
